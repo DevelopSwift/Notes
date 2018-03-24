@@ -18,13 +18,14 @@ class NoteDetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var indicatorDropDownButton: UIButton!
     @IBOutlet weak var indicatorImageView: UIImageView!
     let indicatorDopDown = DropDown()
-    print ("testhttps://github.com/DevelopSwift/Households.git")
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var note = NoteDataset()
     var titledidchange : Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print ("testhttps://github.com/DevelopSwift/Households.git")
+
         KeyboardAvoiding.avoidingView = self.noteDeatailToolbar
         view.addBackground()
         setupIndicatorDropDown()
