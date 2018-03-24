@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Notes
+
+  Created by Fabian Grochowalski on 13.03.18.
+  Copyright © 2018 Fabian Grochowalski. All rights reserved.
+*/
+"noteOverview" = "Overview";
+"warning" = "Warning";
+"alert" = "Alert";
+"info" = "Info";
+"title" = "Title";
+"emptyTitle" = "Title is empty.";
+"setTitle" = "Please enter a title for this note.";
+"sortCategory" = "Sort by category";
+"sortTitle" = "Sort by name";
+
+
+
+

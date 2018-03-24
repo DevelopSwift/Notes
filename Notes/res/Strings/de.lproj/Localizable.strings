@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Notes
+
+  Created by Fabian Grochowalski on 13.03.18.
+  Copyright © 2018 Fabian Grochowalski. All rights reserved.
+*/
+//"noteOverview" = "Notizen Übersicht";
+//"warning" = "Warnung";
+//"alert" = "Meldung";
+//"info" = "Info";
+//"title" = "Titel";
+//"emptyTitle" = "Kein Titel gesetzt.";
+//"setTitle" = "Bitte geben sie einen Titel für diese Notiz ein.";
+
