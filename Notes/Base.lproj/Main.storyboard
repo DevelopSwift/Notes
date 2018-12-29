@@ -119,6 +119,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="XEq-8J-kb9">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="save" id="nD8-t9-Ec9"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RPX-eW-74D">
                             <connections>
                                 <segue destination="SnO-o6-eai" kind="show" id="arB-yK-k1o"/>
@@ -126,6 +127,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="menuButton" destination="nD8-t9-Ec9" id="2xZ-I8-T9k"/>
                         <outlet property="noteOverviewToolbar" destination="XSs-CX-FvD" id="1Mz-Yi-BOY"/>
                         <outlet property="sortAlphabetically" destination="XpF-I4-JGe" id="Khv-CC-qMn"/>
                         <outlet property="sortCategory" destination="uTs-OJ-nyt" id="PZS-76-1ET"/>

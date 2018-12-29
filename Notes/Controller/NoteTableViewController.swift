@@ -15,7 +15,8 @@ class NoteTableViewController: UITableViewController {
     @IBOutlet weak var noteOverviewToolbar: UIToolbar!
     @IBOutlet weak var sortAlphabetically: UIButton!
     @IBOutlet weak var sortCategory: UIButton!
-
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    
     var warningNotesDataset = [NoteDataset]()
     var alertNotesDataset = [NoteDataset]()
     var infoNotesDataset = [NoteDataset]()
@@ -30,6 +31,14 @@ class NoteTableViewController: UITableViewController {
         self.title = NSLocalizedString("noteOverview", comment: "")
         noteOverviewToolbar.setBackgroundImage(UIImage(named: "paper"), forToolbarPosition: .bottom, barMetrics: .default)
 
+        if self.revealViewController() != nil {
+            //TODO: Add Picture for tab gesture interaction
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 200
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+        
         sortCategory.setTitle(NSLocalizedString("sortCategory", comment: ""), for: .normal)
         sortAlphabetically.setTitle(NSLocalizedString("sortTitle", comment: ""), for: .normal)
         

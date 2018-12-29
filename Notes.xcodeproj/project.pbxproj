@@ -17,7 +17,10 @@
 		1F283B3A2053276700BBF13D /* NoteControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F283B392053276700BBF13D /* NoteControllerTableViewCell.swift */; };
 		1F6D8C4D20547EC5007C2C8B /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6D8C4C20547EC5007C2C8B /* NoteDetailViewController.swift */; };
 		71F6192E343F7781353B5729 /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A87BAB226B303C46E10FB8 /* Pods_Notes.framework */; };
+		7B22D72E21D80C41009D7469 /* RearMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B22D72D21D80C41009D7469 /* RearMenuTableViewController.swift */; };
 		7B3A90B7205849CC0074E22E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B3A90B9205849CC0074E22E /* Localizable.strings */; };
+		7B50DF5221D7BA600097212C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B50DF5021D7BA600097212C /* SWRevealViewController.m */; };
+		7B50DF5421D7BA960097212C /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B50DF5321D7BA960097212C /* Menu.storyboard */; };
 		7BE0AE7C2059B01F00514BF9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE0AE7B2059B01F00514BF9 /* Extensions.swift */; };
 		C133108120651DF100149B94 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C133108020651DF100149B94 /* Struct.swift */; };
 		C16AA7B92063FBD60075634F /* IndicatorDropDownDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16AA7B82063FBD60075634F /* IndicatorDropDownDataset.swift */; };
@@ -39,8 +42,13 @@
 		1F6D8C4C20547EC5007C2C8B /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
 		457822EFC2B50E172B26969B /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
 		7878A9F1E8ECC2C742B4D6FC /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		7B22D72D21D80C41009D7469 /* RearMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RearMenuTableViewController.swift; sourceTree = "<group>"; };
 		7B3A90BA205849DA0074E22E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7B50DF4A21D7AF910097212C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7B50DF4C21D7B7510097212C /* Notes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notes-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B50DF5021D7BA600097212C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = ../../SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		7B50DF5121D7BA600097212C /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = ../../SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		7B50DF5321D7BA960097212C /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		7BE0AE7B2059B01F00514BF9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B8A87BAB226B303C46E10FB8 /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C133108020651DF100149B94 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
@@ -73,6 +81,8 @@
 		1F283B112052C13E00BBF13D = {
 			isa = PBXGroup;
 			children = (
+				7B50DF5321D7BA960097212C /* Menu.storyboard */,
+				7B50DF4B21D7B7020097212C /* SWRevealViewController */,
 				1F283B1C2052C13E00BBF13D /* Notes */,
 				1F283B1B2052C13E00BBF13D /* Products */,
 				0613C04A61334032E9123B72 /* Pods */,
@@ -122,6 +132,7 @@
 			children = (
 				1F283B352053140D00BBF13D /* NoteTableViewController.swift */,
 				1F6D8C4C20547EC5007C2C8B /* NoteDetailViewController.swift */,
+				7B22D72D21D80C41009D7469 /* RearMenuTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +170,16 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		7B50DF4B21D7B7020097212C /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7B50DF5121D7BA600097212C /* SWRevealViewController.h */,
+				7B50DF5021D7BA600097212C /* SWRevealViewController.m */,
+				7B50DF4C21D7B7510097212C /* Notes-Bridging-Header.h */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,11 +209,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Fabian Grochowalski";
 				TargetAttributes = {
 					1F283B192052C13E00BBF13D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -221,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B50DF5421D7BA960097212C /* Menu.storyboard in Resources */,
 				1F283B2B2052C13E00BBF13D /* LaunchScreen.storyboard in Resources */,
 				7B3A90B7205849CC0074E22E /* Localizable.strings in Resources */,
 				1F283B282052C13E00BBF13D /* Assets.xcassets in Resources */,
@@ -287,6 +310,8 @@
 				1F283B3820531A3000BBF13D /* Notes.swift in Sources */,
 				1F6D8C4D20547EC5007C2C8B /* NoteDetailViewController.swift in Sources */,
 				C133108120651DF100149B94 /* Struct.swift in Sources */,
+				7B22D72E21D80C41009D7469 /* RearMenuTableViewController.swift in Sources */,
+				7B50DF5221D7BA600097212C /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +361,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -343,6 +369,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -394,6 +421,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -401,6 +429,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -435,12 +464,15 @@
 			baseConfigurationReference = 457822EFC2B50E172B26969B /* Pods-Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WQ7T6B5HP;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fabian.Grochowalski.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWRevealViewController/Notes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,12 +483,14 @@
 			baseConfigurationReference = 7878A9F1E8ECC2C742B4D6FC /* Pods-Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2WQ7T6B5HP;
 				INFOPLIST_FILE = Notes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Fabian.Grochowalski.Notes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SWRevealViewController/Notes-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
