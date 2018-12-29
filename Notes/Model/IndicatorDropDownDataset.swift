@@ -8,7 +8,7 @@
 
 import Foundation
 class IndicatorDropDownDataset{
-    var _indicator: [String] = [NSLocalizedString("warning", comment: ""), NSLocalizedString("alert", comment: ""), NSLocalizedString("info", comment: "")]
+    var _indicator: [String] = [NSLocalizedString("warning", comment: ""),              NSLocalizedString("alert", comment: ""), NSLocalizedString("info", comment: "")]
     
     var indicator: [String] {
         get {

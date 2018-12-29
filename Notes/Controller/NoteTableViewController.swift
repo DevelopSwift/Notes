@@ -35,6 +35,9 @@ class NoteTableViewController: UITableViewController {
         
         sortCategory.isSelected = false
         sortAlphabetically.isSelected = false
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 600
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -152,13 +155,13 @@ class NoteTableViewController: UITableViewController {
             let noteItem = sortAlphabetically.isSelected ? noteItems.sorted(by: { $0.title < $1.title })[indexPath.row] : noteItems[indexPath.row]
             cell.NoteTitleLabel.text = noteItem.title
             cell.NoteSubTitleLabel?.text = noteItem.description
-            cell.NoteIndicatorLabel?.text = noteItem.indicator
+            cell.NoteIndicatorLabel?.text = NSLocalizedString(noteItem.indicator.lowercased(), comment: "")
             cell.NoteIndicatorImageView.image = UIImage(named: noteItem.indicator)
         } else {
             let noteItem = sortAlphabetically.isSelected ? notesDataset.sorted(by: { $0.title < $1.title })[indexPath.row] : notesDataset[indexPath.row]
             cell.NoteTitleLabel.text = noteItem.title
             cell.NoteSubTitleLabel?.text = noteItem.description
-            cell.NoteIndicatorLabel?.text = noteItem.indicator
+            cell.NoteIndicatorLabel?.text = NSLocalizedString(noteItem.indicator.lowercased(), comment: "")
             cell.NoteIndicatorImageView.image = UIImage(named: noteItem.indicator)
         }
         return cell
