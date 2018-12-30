@@ -9,11 +9,13 @@
 import UIKit
 
 class RearMenuTableViewController: UITableViewController {
-
+    @IBOutlet weak var menuToolbar: UINavigationItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addBackground()
-    
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "paper"), for: UIBarMetrics.default)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -214,6 +214,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Etd-Bt-74k">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bI5-8P-vvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="b1E-Ff-ehz" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="paper" id="hHY-OX-y5y">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -224,7 +225,6 @@
                         <segue destination="1Ds-o7-l1E" kind="relationship" relationship="rootViewController" id="B9H-gG-VzQ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bI5-8P-vvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-346" y="-34"/>
         </scene>
